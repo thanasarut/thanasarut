@@ -1,3 +1,15 @@
+.DS_Store
+.Trash
+.cbq_history
+.bash_history
+.bash_session
+.config
+.cups
+.docker
+.dropbox
+.gitconfig
+.lesshst
+.CFUserTextEncoding
 Applications
 Documents
 Dropbox
