@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CURRENT=$(pwd)
+for MS in java-basicjrpc library-java-utility library-java-hotel-objects; do
+  cd ~/sunseries/$MS
+  git pull
+  mvn clean install
+done
+cd $CURRENT
