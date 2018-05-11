@@ -1,3 +1,5 @@
+.android
+.nuuid.ini
 .wakatime*
 .bundle
 .gem
@@ -34,3 +36,4 @@ DOwnloads
 Library
 Movies
 Pictures
+VirtualBox VMs
