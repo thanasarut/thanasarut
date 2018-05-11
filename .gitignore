@@ -1,3 +1,4 @@
+.wakatime*
 .bundle
 .gem
 .m2
@@ -7,6 +8,7 @@
 .subversion
 .vim
 .viminfo
+.vimrc
 .wget-hsts
 .DS_Store
 .Trash
