@@ -8,9 +8,7 @@ export M2_HOME=/usr/local/Cellar/maven/3.5.3/libexec
 export COUCHBASE_HOME=/Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin
 export PATH=/usr/local/bin:$HOME/bin:$M2_HOME/bin:${COUCHBASE_HOME}:$PATH
 
-if [ `hostname` = "TheiMac2.local" ]; then
-  eval "$(rbenv init -)"
-fi
+[ `hostname` != "TheiMac2.local" ] && eval "$(rbenv init -)"
 
 # put this in your .bash_profile
 if [ $ITERM_SESSION_ID ]; then
