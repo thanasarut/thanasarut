@@ -1,13 +1,16 @@
 #!/bin/bash
 
 alias sshjhost='ssh vick.thanasarut@jhost'
+alias sshstimac='ssh vick.thanasarut@stimac'
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export M2_HOME=/usr/local/Cellar/maven/3.5.3/libexec
 export COUCHBASE_HOME=/Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin
 export PATH=/usr/local/bin:$HOME/bin:$M2_HOME/bin:${COUCHBASE_HOME}:$PATH
 
-eval "$(rbenv init -)"
+if [ `hostname` = "TheiMac2.local" ]; then
+  eval "$(rbenv init -)"
+fi
 
 # put this in your .bash_profile
 if [ $ITERM_SESSION_ID ]; then
