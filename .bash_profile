@@ -10,6 +10,12 @@ export PATH=/usr/local/bin:$HOME/bin:$M2_HOME/bin:${COUCHBASE_HOME}:$PATH
 
 [ `hostname` != "TheiMac2.local" ] && eval "$(rbenv init -)"
 
+export GREP_OPTIONS='--color=auto'
+export PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31m\]\$\[\033[0m\] '
+# Added by Thanasarut on 28/11/2014 (copy from Laurence)
+#export PS1='\[\e[33;1m\][\[\e[36;1m\]\t\[\e[33;1m\] \u@\h \w]\$ \[\e[0m\]'
+
+#
 # put this in your .bash_profile
 if [ $ITERM_SESSION_ID ]; then
   #export PROMPT_COMMAND='echo -ne "\033];${HOSTNAME}:${PWD##*/}\007"; ':"$PROMPT_COMMAND";
